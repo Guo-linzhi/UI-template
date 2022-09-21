@@ -51,6 +51,7 @@ namespace UI_template
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("微軟正黑體", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+                    currentButton.TextImageRelation = TextImageRelation.TextBeforeImage;
                     panelTitleBar.BackColor = color;
                     panelLogo.BackColor = ThemeColor.ChangeColorBrightness(color, -0.3);
                     ThemeColor.PrimaryColor = color;
@@ -61,14 +62,12 @@ namespace UI_template
         }
         private void DisableButton()
         {
-            foreach (Control previousBtn in panelMenu.Controls)
+            if (currentButton != null) 
             {
-                if (panelMenu.GetType() != typeof(Button))
-                {
-                    previousBtn.BackColor = Color.FromArgb(51, 51, 76);
-                    previousBtn.ForeColor = Color.Gainsboro;
-                    previousBtn.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-                }
+                currentButton.BackColor = Color.FromArgb(51, 51, 76);
+                currentButton.ForeColor = Color.Gainsboro;
+                currentButton.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+                currentButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             }
         }
         private void OpenChildForm(Form ChildForm, object btnSender)
