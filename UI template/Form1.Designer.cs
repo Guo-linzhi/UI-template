@@ -69,7 +69,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(165, 449);
+            this.panelMenu.Size = new System.Drawing.Size(210, 651);
             this.panelMenu.TabIndex = 0;
             // 
             // btnSetting
@@ -85,7 +85,7 @@
             this.btnSetting.Margin = new System.Windows.Forms.Padding(2);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnSetting.Size = new System.Drawing.Size(165, 48);
+            this.btnSetting.Size = new System.Drawing.Size(210, 48);
             this.btnSetting.TabIndex = 8;
             this.btnSetting.Text = "Setting";
             this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -106,7 +106,7 @@
             this.btnAbnormal.Margin = new System.Windows.Forms.Padding(2);
             this.btnAbnormal.Name = "btnAbnormal";
             this.btnAbnormal.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnAbnormal.Size = new System.Drawing.Size(165, 48);
+            this.btnAbnormal.Size = new System.Drawing.Size(210, 48);
             this.btnAbnormal.TabIndex = 7;
             this.btnAbnormal.Text = "Abnormal";
             this.btnAbnormal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -127,7 +127,7 @@
             this.btmDownload.Margin = new System.Windows.Forms.Padding(2);
             this.btmDownload.Name = "btmDownload";
             this.btmDownload.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btmDownload.Size = new System.Drawing.Size(165, 48);
+            this.btmDownload.Size = new System.Drawing.Size(210, 48);
             this.btmDownload.TabIndex = 6;
             this.btmDownload.Text = "Download";
             this.btmDownload.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -148,7 +148,7 @@
             this.btnHistory.Margin = new System.Windows.Forms.Padding(2);
             this.btnHistory.Name = "btnHistory";
             this.btnHistory.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnHistory.Size = new System.Drawing.Size(165, 48);
+            this.btnHistory.Size = new System.Drawing.Size(210, 48);
             this.btnHistory.TabIndex = 5;
             this.btnHistory.Text = "History";
             this.btnHistory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -169,7 +169,7 @@
             this.btnManual.Margin = new System.Windows.Forms.Padding(2);
             this.btnManual.Name = "btnManual";
             this.btnManual.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnManual.Size = new System.Drawing.Size(165, 48);
+            this.btnManual.Size = new System.Drawing.Size(210, 48);
             this.btnManual.TabIndex = 4;
             this.btnManual.Text = "Manual";
             this.btnManual.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -190,7 +190,7 @@
             this.btnAuto.Margin = new System.Windows.Forms.Padding(2);
             this.btnAuto.Name = "btnAuto";
             this.btnAuto.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnAuto.Size = new System.Drawing.Size(165, 48);
+            this.btnAuto.Size = new System.Drawing.Size(210, 48);
             this.btnAuto.TabIndex = 3;
             this.btnAuto.Text = "Auto";
             this.btnAuto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -211,7 +211,7 @@
             this.btnConnent.Margin = new System.Windows.Forms.Padding(2);
             this.btnConnent.Name = "btnConnent";
             this.btnConnent.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnConnent.Size = new System.Drawing.Size(165, 48);
+            this.btnConnent.Size = new System.Drawing.Size(210, 48);
             this.btnConnent.TabIndex = 2;
             this.btnConnent.Text = "Connent";
             this.btnConnent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -227,7 +227,7 @@
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(2);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(165, 64);
+            this.panelLogo.Size = new System.Drawing.Size(210, 64);
             this.panelLogo.TabIndex = 1;
             // 
             // label1
@@ -236,7 +236,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(34, 18);
+            this.label1.Location = new System.Drawing.Point(57, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 21);
@@ -252,10 +252,10 @@
             this.panelTitleBar.Controls.Add(this.btnClosefrm);
             this.panelTitleBar.Controls.Add(this.lblTitle);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(165, 0);
+            this.panelTitleBar.Location = new System.Drawing.Point(210, 0);
             this.panelTitleBar.Margin = new System.Windows.Forms.Padding(2);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(573, 64);
+            this.panelTitleBar.Size = new System.Drawing.Size(824, 64);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -265,7 +265,7 @@
             this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMax.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMax.ForeColor = System.Drawing.Color.White;
-            this.btnMax.Location = new System.Drawing.Point(548, 28);
+            this.btnMax.Location = new System.Drawing.Point(799, 28);
             this.btnMax.Margin = new System.Windows.Forms.Padding(2);
             this.btnMax.Name = "btnMax";
             this.btnMax.Size = new System.Drawing.Size(22, 24);
@@ -281,7 +281,7 @@
             this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMin.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMin.ForeColor = System.Drawing.Color.White;
-            this.btnMin.Location = new System.Drawing.Point(522, 0);
+            this.btnMin.Location = new System.Drawing.Point(773, 0);
             this.btnMin.Margin = new System.Windows.Forms.Padding(2);
             this.btnMin.Name = "btnMin";
             this.btnMin.Size = new System.Drawing.Size(22, 24);
@@ -296,7 +296,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(548, 0);
+            this.btnClose.Location = new System.Drawing.Point(799, 0);
             this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(22, 24);
@@ -325,7 +325,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Yu Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(205, 15);
+            this.lblTitle.Location = new System.Drawing.Point(331, 15);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(76, 29);
@@ -336,17 +336,17 @@
             // 
             this.panelDesktopPane.Controls.Add(this.pictureBox1);
             this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPane.Location = new System.Drawing.Point(165, 64);
+            this.panelDesktopPane.Location = new System.Drawing.Point(210, 64);
             this.panelDesktopPane.Margin = new System.Windows.Forms.Padding(2);
             this.panelDesktopPane.Name = "panelDesktopPane";
-            this.panelDesktopPane.Size = new System.Drawing.Size(573, 385);
+            this.panelDesktopPane.Size = new System.Drawing.Size(824, 587);
             this.panelDesktopPane.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(235, 181);
+            this.pictureBox1.Location = new System.Drawing.Point(361, 282);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
@@ -358,13 +358,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(738, 449);
+            this.ClientSize = new System.Drawing.Size(1034, 651);
             this.Controls.Add(this.panelDesktopPane);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(754, 488);
+            this.MinimumSize = new System.Drawing.Size(1050, 690);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panelMenu.ResumeLayout(false);
