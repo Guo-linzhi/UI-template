@@ -18,17 +18,17 @@ namespace UI_template.Forms
         }
         private void LoadTheme()
         {
-            foreach (Control btns in this.Controls)
+            gbx_input.ForeColor = ThemeColor.SecondaryColor;
+            gbx_output.ForeColor = ThemeColor.SecondaryColor;
+            foreach (Control btns in gbx_input.Controls)
             {
-                if (btns.GetType() == typeof(Button))
-                {
-                    Button btn = (Button)btns;
-                    btn.BackColor = ThemeColor.PrimaryColor;
-                    btn.ForeColor = Color.White;
-                    btn.FlatAppearance.BorderColor = ThemeColor.SecondaryColor;
-                }
+                btns.ForeColor = Color.Black;
             }
-            label21.ForeColor = ThemeColor.SecondaryColor;
+            foreach (Control btns in gbx_output.Controls)
+            {
+                btns.ForeColor = Color.Black;
+            }
+
         }
 
         private void frmManual_Load(object sender, EventArgs e)
