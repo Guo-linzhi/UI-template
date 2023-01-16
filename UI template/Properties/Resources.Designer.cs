@@ -579,5 +579,15 @@ namespace UI_template.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 立喬LOGO_直式1 {
+            get {
+                object obj = ResourceManager.GetObject("立喬LOGO-直式1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

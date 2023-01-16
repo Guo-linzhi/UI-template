@@ -309,5 +309,8 @@
   <ItemGroup>
     <None Include="Resources\xmark-solid-modified.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\立喬LOGO-直式1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
