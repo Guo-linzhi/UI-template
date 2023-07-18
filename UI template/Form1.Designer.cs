@@ -29,16 +29,6 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.btnMax = new System.Windows.Forms.Button();
-            this.btnMin = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.panelDesktopPane = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnClosefrm = new System.Windows.Forms.Button();
             this.btnSetting = new System.Windows.Forms.Button();
             this.btnAbnormal = new System.Windows.Forms.Button();
             this.btmDownload = new System.Windows.Forms.Button();
@@ -46,6 +36,17 @@
             this.btnManual = new System.Windows.Forms.Button();
             this.btnAuto = new System.Windows.Forms.Button();
             this.btnConnent = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.btnMax = new System.Windows.Forms.Button();
+            this.btnMin = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnClosefrm = new System.Windows.Forms.Button();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.panelDesktopPane = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -70,141 +71,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(210, 651);
             this.panelMenu.TabIndex = 0;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panelLogo.Controls.Add(this.label1);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(2);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(210, 64);
-            this.panelLogo.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(57, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 21);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Code Name";
-            // 
-            // panelTitleBar
-            // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.panelTitleBar.Controls.Add(this.btnMax);
-            this.panelTitleBar.Controls.Add(this.btnMin);
-            this.panelTitleBar.Controls.Add(this.btnClose);
-            this.panelTitleBar.Controls.Add(this.btnClosefrm);
-            this.panelTitleBar.Controls.Add(this.lblTitle);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(210, 0);
-            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(2);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(824, 64);
-            this.panelTitleBar.TabIndex = 1;
-            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
-            // 
-            // btnMax
-            // 
-            this.btnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMax.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMax.ForeColor = System.Drawing.Color.White;
-            this.btnMax.Location = new System.Drawing.Point(725, 0);
-            this.btnMax.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMax.Name = "btnMax";
-            this.btnMax.Size = new System.Drawing.Size(22, 24);
-            this.btnMax.TabIndex = 4;
-            this.btnMax.Text = "O";
-            this.btnMax.UseVisualStyleBackColor = true;
-            this.btnMax.Visible = false;
-            this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
-            // 
-            // btnMin
-            // 
-            this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMin.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMin.ForeColor = System.Drawing.Color.White;
-            this.btnMin.Location = new System.Drawing.Point(762, 0);
-            this.btnMin.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(22, 24);
-            this.btnMin.TabIndex = 3;
-            this.btnMin.Text = "-";
-            this.btnMin.UseVisualStyleBackColor = true;
-            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(799, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(22, 24);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Yu Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(331, 15);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(76, 29);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Home";
-            // 
-            // panelDesktopPane
-            // 
-            this.panelDesktopPane.Controls.Add(this.pictureBox1);
-            this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPane.Location = new System.Drawing.Point(210, 64);
-            this.panelDesktopPane.Margin = new System.Windows.Forms.Padding(2);
-            this.panelDesktopPane.Name = "panelDesktopPane";
-            this.panelDesktopPane.Size = new System.Drawing.Size(824, 587);
-            this.panelDesktopPane.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::UI_template.Properties.Resources.立喬LOGO_直式1;
-            this.pictureBox1.Location = new System.Drawing.Point(116, 48);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(581, 439);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnClosefrm
-            // 
-            this.btnClosefrm.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnClosefrm.FlatAppearance.BorderSize = 0;
-            this.btnClosefrm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClosefrm.Image = global::UI_template.Properties.Resources.share_solid_modified;
-            this.btnClosefrm.Location = new System.Drawing.Point(0, 0);
-            this.btnClosefrm.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClosefrm.Name = "btnClosefrm";
-            this.btnClosefrm.Size = new System.Drawing.Size(56, 64);
-            this.btnClosefrm.TabIndex = 1;
-            this.btnClosefrm.UseVisualStyleBackColor = true;
-            this.btnClosefrm.Click += new System.EventHandler(this.btnClosefrm_Click);
             // 
             // btnSetting
             // 
@@ -353,6 +219,140 @@
             this.btnConnent.UseVisualStyleBackColor = true;
             this.btnConnent.Click += new System.EventHandler(this.btnConnent_Click);
             // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelLogo.Controls.Add(this.label1);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(210, 64);
+            this.panelLogo.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.LightGray;
+            this.label1.Location = new System.Drawing.Point(57, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 21);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Code Name";
+            // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panelTitleBar.Controls.Add(this.btnMax);
+            this.panelTitleBar.Controls.Add(this.btnMin);
+            this.panelTitleBar.Controls.Add(this.btnClose);
+            this.panelTitleBar.Controls.Add(this.btnClosefrm);
+            this.panelTitleBar.Controls.Add(this.lblTitle);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(210, 0);
+            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(824, 64);
+            this.panelTitleBar.TabIndex = 1;
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // btnMax
+            // 
+            this.btnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMax.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMax.ForeColor = System.Drawing.Color.White;
+            this.btnMax.Location = new System.Drawing.Point(725, 0);
+            this.btnMax.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMax.Name = "btnMax";
+            this.btnMax.Size = new System.Drawing.Size(22, 24);
+            this.btnMax.TabIndex = 4;
+            this.btnMax.Text = "O";
+            this.btnMax.UseVisualStyleBackColor = true;
+            this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
+            // 
+            // btnMin
+            // 
+            this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMin.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMin.ForeColor = System.Drawing.Color.White;
+            this.btnMin.Location = new System.Drawing.Point(762, 0);
+            this.btnMin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.Size = new System.Drawing.Size(22, 24);
+            this.btnMin.TabIndex = 3;
+            this.btnMin.Text = "-";
+            this.btnMin.UseVisualStyleBackColor = true;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(799, 0);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(22, 24);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnClosefrm
+            // 
+            this.btnClosefrm.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnClosefrm.FlatAppearance.BorderSize = 0;
+            this.btnClosefrm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClosefrm.Image = global::UI_template.Properties.Resources.share_solid_modified;
+            this.btnClosefrm.Location = new System.Drawing.Point(0, 0);
+            this.btnClosefrm.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClosefrm.Name = "btnClosefrm";
+            this.btnClosefrm.Size = new System.Drawing.Size(56, 64);
+            this.btnClosefrm.TabIndex = 1;
+            this.btnClosefrm.UseVisualStyleBackColor = true;
+            this.btnClosefrm.Click += new System.EventHandler(this.btnClosefrm_Click);
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Yu Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(331, 15);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(76, 29);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Home";
+            // 
+            // panelDesktopPane
+            // 
+            this.panelDesktopPane.Controls.Add(this.pictureBox1);
+            this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktopPane.Location = new System.Drawing.Point(210, 64);
+            this.panelDesktopPane.Margin = new System.Windows.Forms.Padding(2);
+            this.panelDesktopPane.Name = "panelDesktopPane";
+            this.panelDesktopPane.Size = new System.Drawing.Size(824, 587);
+            this.panelDesktopPane.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::UI_template.Properties.Resources.立喬LOGO_直式1;
+            this.pictureBox1.Location = new System.Drawing.Point(116, 48);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(581, 439);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -398,6 +398,7 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnMax;
         private System.Windows.Forms.Button btnMin;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
