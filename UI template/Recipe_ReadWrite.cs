@@ -11,9 +11,9 @@ using System.Windows.Shapes;
 
 namespace UI_template
 {
-    public static class Recipe_ReadWrite
+    public class Recipe_ReadWrite
     {
-        public static List<string> crawl_Var(System.Windows.Forms.Control controls, List<string> strings)   //抓資料
+        public List<string> crawl_Var(System.Windows.Forms.Control controls, List<string> strings)   //抓資料
         {
             foreach (System.Windows.Forms.Control control in controls.Controls)
             {
@@ -42,7 +42,25 @@ namespace UI_template
             }
             return strings;
         }
-        public static DataTable create_table(List<string> strings)//存成datatable
+        public void load_Var(System.Windows.Forms.Control controls, DataTable dataTable)
+        {
+            foreach (System.Windows.Forms.Control control in controls.Controls)
+            {
+                if (control.Controls.Count > 0)
+                    load_Var(control, dataTable);
+                else
+                {
+                    for (int i = 0; i < dataTable.Rows.Count;i++)
+                    {
+                        if (control.Name == dataTable.Rows[i]["Name"].ToString())
+                        {
+                            control.Text = dataTable.Rows[i]["Text"].ToString();
+                        }
+                    }
+                }
+            }
+        }
+        public DataTable create_table(List<string> strings)//存成datatable
         {
             DataTable dt = new DataTable();
 
@@ -55,29 +73,41 @@ namespace UI_template
             }
             return dt;
         }
-        public static void create_CSV_Step(string path, DataTable dt,string name)
+        public DataTable read_CSV(string path)//讀CSV
         {
-            create_file(path);
-            create_CSV(path, dt,name);
-        }
-        private static void create_file(string fulllPath)
-        {
-            if (!Directory.Exists(fulllPath))
+            DataTable dt = new DataTable();
+            using (StreamReader sr = new StreamReader(path))
             {
-                Directory.CreateDirectory(fulllPath);
+                string[] headers = sr.ReadLine().Split(',');
+                foreach (string header in headers)
+                {
+                    dt.Columns.Add(header);
+                }
+                while (!sr.EndOfStream)
+                {
+                    string[] rows = sr.ReadLine().Split(',');
+                    DataRow dr = dt.NewRow();
+                    for (int i = 0; i < headers.Length; i++)
+                    {
+                        dr[i] = rows[i];
+                    }
+                    dt.Rows.Add(dr);
+                }
             }
+            return dt;
         }
-        private static void create_CSV(string path, DataTable dt, string name)
+        public void create_CSV(string path, DataTable dt, string name)//建CSV
         {
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);//建資料夾
+
             path = $"{path}\\{name}";
             StreamWriter s = new StreamWriter(path, false);
             for (int i = 0; i < dt.Columns.Count; i++)
             {
                 s.Write(dt.Columns[i]);
                 if (i < dt.Columns.Count - 1)
-                {
                     s.Write(",");
-                }
             }
             s.Write(s.NewLine);
             foreach (DataRow dr in dt.Rows)
@@ -93,14 +123,10 @@ namespace UI_template
                             s.Write(value);
                         }
                         else
-                        {
                             s.Write(dr[i].ToString());
-                        }
                     }
                     if (i < dt.Columns.Count - 1)
-                    {
                         s.Write(",");
-                    }
                 }
                 s.Write(s.NewLine);
             }
